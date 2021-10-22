@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/social-likes_flat.css"/>
+	<link rel="stylesheet" type="text/css" href="js/magnific-popup/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="fonts/hinted-FuturaPT-Book.woff2">
+	<link rel="stylesheet" type="text/css" href="fonts/hinted-FuturaPT-Demi.woff2">
+	<link rel="stylesheet" type="text/css" href="fonts/hinted-FuturaPT-Medium.woff2">
+
+	<script type="text/javascript" src="js/libs.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/mailajax.js"></script>
+	<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+	 <!--[if lt IE 9]>
+	 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<title>Международные переезды в 70+ стран - Москва |</title>
+	
+
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(50749180, "init", {
+        id:50749180,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50749180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+		</head>
+<body class="home page-template page-template-page-index page-template-page-index-php page page-id-4" style="">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.cases').slick({
+				arrows: true,
+				accessibility: true,
+				dots: true,
+				adaptiveHeight: true,
+			});
+
+			//E-mail Ajax Send
+	$("#form1").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "js/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+	$("#form2").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "js/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+			$('.photos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				centerPadding: '80px',
+				autoplay: false,
+				centerMode: true,
+				dots: true,
+				dotsClass: 'list-number',
+				responsive: [
+				{
+					breakpoint: 1400,
+					settings: {
+						slidesToShow: 3,
+						arrows: true,
+						centerMode: true,
+						centerPadding: '80px'
+					}
+				},
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+						arrows: true,
+						centerMode: true,
+						centerPadding: '0'
+					}
+				},
+				{
+					breakpoint: 800,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '0',
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 500,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '0',
+						slidesToShow: 1
+					}
+				}]
+			});
+
+			$('.case_images').each(function() { // the containers for all your galleries
+				$(this).magnificPopup({
+        delegate: '.case_img a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+        	enabled:true
+        }
+      });
+			});
+
+
+			$('.show_big').magnificPopup({
+				type: 'image',
+				gallery:{
+					enabled: true,
+					navigateByImgClick: true
+				},
+				zoom: {
+					enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          }
+        });
+
+			$('.gallery-attestat').magnificPopup({
+				type: 'image',
+				gallery:{
+					enabled: true,
+					navigateByImgClick: true
+				},
+				zoom: {
+					enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          }
+        });
+		});
+	</script>
+	
+		<header>
+			<div class="main">
+
+				<div id="header">
+					<div class="logo"><a href="index.html"><img class="logo-img" src="images/logo.png" alt=""></a></div>					
+					<div class="geo">
+						<div class="geo__item">Москва, ул.Семеновский переулок д.15</div>
+					</div>
+					<div class="mail"><a href="mailto:info@rrelocation.ru">info@rrelocation.ru</a></div>
+					<div class="phone"><a href="tel:+7 (495) 088-12-75">+7 (495) 088-12-75</a></div>
+
+					<div class="contact_media">
+						<a href="mailto:info@rrelocation.ru"><img src="images/mail_mobile.png" height="22" alt="" class="email_media"></a>
+
+						<a href="tel:+7 (495) 088-12-75"><img src="images/tele_mobile.png" height="26" alt=""></a>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+			<noindex>
+				<div class="adapt_menu">
+					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+					<label class="btn-menu" for="hmt">
+						<span class="first"></span>
+						<span class="second"></span>
+						<span class="third"></span>
+					</label>
+					<ul class="hidden-menu">
+
+						<li><a href="#home">Международные переезды «под ключ»</a></li>
+						<li><a href="#tarif">Тарифные планы</a></li>
+						<li></li>
+						<li><a href="#coment">Реализованные проекты</a></li>
+						<li><a href="#about">Контакты</a></li>
+					</ul>
+				</div>
+			</noindex>
+		</header>
+<section class="screen1" id="home" style="background: url(images/header-london.png) no-repeat 50% 60%;">
+	<div class="main">
+		<h1>Бережно и быстро перевезём ваши вещи в Лондон</h1>
+		<div class="description">
+			<p>“Под ключ” от двери до двери. С финансовыми гарантиями! <br> Из Москвы и области </p>
+		</div>
+
+			<form id="form1" method="post" action="">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="rrelocation">
+		<input type="hidden" name="admin_email" value="info@rrelocation.ru, info@rrelocation.ru, sr@rrelocation.ru, 5DB07A44-19BC-15DD-74FE-E7A4BE318ACF+79267770130@sms.ru">
+		<input type="hidden" name="form_subject" value="Получить консультацию">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="source1" value="">
+		<input type="text" id="name1" name="Имя" placeholder="Ваше имя">
+		<input type="text" id="phone1" name="Телефон" placeholder="Ваш телефон">
+		<input type="submit" class="button" value="Получить консультацию">
+	</form>
+	<div class="privacy_form"><input type="checkbox" checked="" value="">Я согласен с условиями <a target="_blank" href="#">политики конфиденциальности</a></div>	
+
+		<div class="advantages">
+			<div class="adv_item">
+				<div class="adv_img ic1"></div>
+				<div class="adv_text">Погрузим/разгрузим<br>в России и за границей</div>
+			</div>
+
+			<div class="adv_item">
+				<div class="adv_img ic2"></div>
+				<div class="adv_text">Склад временного хранения<br>бесплатно на время договора</div>
+			</div>
+
+			<div class="adv_item">
+				<div class="adv_img ic3"></div>
+				<div class="adv_text">Финансовые<br>гарантии сроков</div>
+			</div>
+
+			<div class="adv_item">
+				<div class="adv_img ic4"></div>
+				<div class="adv_text">Бесплатный<br>выезд оценщика</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
+<section class="screen4">
+				<div class="main" id="tarif">
+					<h2 class="title_block">Тариф на международный переезд в Лондон</h2>
+
+					<div class="tarifs">
+						<div class="tarif_item">
+							<div class="tarif_title">Экономный</div>
+							<div class="tarif_text">
+								<p>Перевозка до страны назначения</p>
+								<p>Экспортное таможенное оформление</p>
+							</div>
+							<a href="#" class="button_tarif none_tarif" title="Экономный">Бесплатная консультация</a>
+						</div>
+
+						<div class="tarif_item">
+							<div class="tarif_title">Оптимальный</div>
+							<div class="tarif_text">
+								<p>Перевозка до страны назначения</p>
+								<p>Экспортное таможенное оформление</p>
+								<p>Таможенное оформление в стране назначения</p>
+								<p>Доставка до адреса</p>
+							</div>
+							<a href="#" class="button_tarif none_tarif" title="Оптимальный">Бесплатная консультация</a>
+						</div>
+
+						<div class="tarif_item">
+							<div class="tarif_title">«Под ключ»</div>
+							<div class="tarif_text">
+								<p>Перевозка до страны назначения</p>
+								<p>Экспортное таможенное оформление</p>
+								<p>Таможенное оформление в стране назначения</p>
+								<p>Доставка до адреса</p>
+								<p>Упаковка личных вещей</p>
+								<p>Сброка/разборка мебели</p>
+								<p>Погрузка/разгрузка</p>
+							</div>
+							<a href="#" class="button_tarif none_tarif" title="Под ключ">Бесплатная консультация</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="buttons">
+							<a href="#" class="button_tarif" title="Экономный">Бесплатная консультация</a>
+							<a href="#" class="button_tarif" title="Оптимальный">Бесплатная консультация</a>
+							<a href="#" class="button_tarif" title="Под ключ">Бесплатная консультация</a>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+					<div class="tarif_info">
+						<span>Как формируется цена на переезд в Лондон?</span>
+						На стоимость международного переезда влияют: 
+						<ul>
+							<li>cтрана переезда; </li>
+							<li>объем перевозимого груза;</li>
+							<li>тип вещей (требуется ли специальное разрешение на ввоз и вывоз отдельных позиций); </li>
+							<li>вес груза;</li>
+							<li>вид используемого транспортного средства (авто, авиа, мультимодальная перевозка).</li>
+						</ul>
+					</div>
+					<div class="tarif_order">
+						Позвоните нам по телефону <a href="tel:+7 (495) 088-12-75" class="tel">+7 (495) 088-12-75</a>, и мы рассчитаем стоимость перевозки ваших вещей. При необходимости наш специалист приедет к вам для объективной оценки.
+					</div>
+
+				
+				</div>
+			</section>
+
+			
+			
+			<section class="screen2">
+	<div class="main">
+		<div class="text_item">
+			<span>Полный список услуг по переезду в Лондон</span>
+
+			
+			
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="text_item">
+			<p><b>1.Погрузка/разгрузка в России и в Лондоне</b> <br>Бережная погрузка/разгрузка сохранит ваши вещи в целости.</p>
+
+			<ul>
+				<li><b>2. Разборка/сборка мебели в России и в Лондоне</b>
+					<p>Установка деталей в точно предназначенное для них место или аккуратное, не допускающее поломок, превращение вашей мебели в комплект деталей.</p></li>
+					<li><b>3. Страхование груза </b>
+						<p>Ваш груз доедет целым и невредимым, но, для 100% уверенности он может быть застрахован.</p></li>
+						<li><b>4. Финансовые гарантии сроков</b>
+							<p>Будьте уверены, опоздание будет компенсировано, если оно всё же случится.</p></li>
+						<li><b>5. Безопасная упаковка</b>
+							<p>Даже самый хрупкий груз будет доставлен получателю в точности таким, каким был отправлен, благодаря надёжной защитной упаковке</p></li>
+						<li><b>6. Бесплатный выезд оценщика по Москве и области</b>
+							<p>Для того, чтобы не сделать ошибку, определяя цену, можно привлечь к оценке профессионала — это абсолютно бесплатно.</p></li>
+						<li><b>7. Круглосуточная служба поддержки по телефону</b>
+							<p>Что бы ни случилось, помощь будет доступна по телефону в любое время дня и ночи.</p></li>
+						<li><b>8. Склад временного хранения бесплатно на время договора </b>
+							<p> Заключив договор, можно перестать ломать голову над тем, где оставить ценные вещи, просто передав их на склад для бесплатного хранения.</p></li>
+						<li><b>9. Экспортное таможенное оформление</b>
+							<p> Все таможенные формальности будут соблюдены, а груз покинет страну без каких-либо препятствий.</p></li>
+						<li><b>10. Таможенное оформление в стране назначения </b>
+							<p>Правильно оформляем таможенные документы в любой стране мира.</p></li>
+						<li><b>11. Доставка до адреса за границей </b>
+							<p> Груз будет доставлен в удобное для вас место, где бы оно ни находилось.</p></li>
+						<li><b>12. Сортировка и упаковка вещей</b>
+							<p>В месте назначения вы быстро найдете нужный предмет, а грамотная упаковка защитит даже хрупкие изделия из стекла и фарфора.</p></li>
+						</ul>
+					</div>
+
+					
+
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			
+			<section class="screen5">
+	<div class="main" id="coment">
+		<h3 class="title_block">Реализованные проекты международных переездов</h3>
+
+		<div class="cases">
+
+			<!-- Case 0.1 -->
+			<div class="case_item">
+				<div class="case_info">
+					<div class="case_author">
+						<img src="images/avatar3.png" alt="">
+						<div class="case_name">
+							<span>Кирилл Канифатов</span>
+							<p>Переезд: Москва - Лозанна</p>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="case_task">
+						<span></span>
+						
+					</div>
+					<div class="case_result">
+						<span></span>
+						
+					</div>
+				</div>
+
+				<div class="case_text">
+					<span>Отзыв клиента:</span>
+					Переезжали всей семьей из д. Барвиха, Московской области в г. Лозанна в Швейцарии. Обратились в несколько мувинговых компаний в том числе иностранных, вызвали на оценку имущества. Самое лучшее предложение по срокам и цене получили от специалистов из компании RRelocation Moscow, определились с датой упаковки и отправки груза. Так как у нас общий объем перевозимого имущества составил 228 м3, а вес составил 22 000 килограмм, потребовалось отправлять большими грузовыми машинами по 82 м3, в итоге их потребовалось 4 и как нам объяснили логисты все машины должны были ехать одновременно в одной колонне и проезжать границы тоже должны вместе, это таможенные правила Евросоюза. Все имущество было упаковано за 5 дней, и погружено за один день. В Лозанне мы приняли свои вещи через неделю. Компания профессионалов, всем советую!
+					<div class="case_images">
+						<div class="case_img">
+							<a href="images/lozanaIMG_3436.jpg"><img src="images/lozanaIMG_3436.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/lozanaIMG_3449.jpg"><img src="images/lozanaIMG_3449.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/lozanaIMG_3451.jpg"><img src="images/lozanaIMG_3451.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/lozanaIMG_3460.jpg"><img src="images/lozanaIMG_3460.jpg"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Case 1 -->
+			<div class="case_item">
+				<div class="case_info">
+					<div class="case_author">
+						<img src="images/avatar7.png" alt="">
+						<div class="case_name">
+							<span>Ирина Кастельцева</span>
+							<p>Переезд: Москва - Майами</p>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="case_task">
+						<span></span>
+						
+					</div>
+					<div class="case_result">
+						<span></span>
+						
+					</div>
+				</div>
+
+				<div class="case_text">
+					<span>Отзыв клиента:</span>
+					Хочу порекомендовать мувинговую компанию RRelocation Moscow за организацию переезда моей семьи из Москвы в Майами (США). У меня было одно очень важное условие при выборе компании для переезда – чтобы морской контейнер был подан в день переезда к нашему подъезду, что было сделать весьма непросто учитывая, что мы проживали в центре города куда въезд большегрузному транспорту в дневное время запрещен. Специалист по оценке имущества из RRelocation Moscow совместно с логистами выехали к нам на адрес и посмотрели возможность удовлетворения моих условий и все получилось на отлично! Спасибо Руслану за четкое понимание желаний клиента. Советую
+
+
+					<div class="case_images">
+						<div class="case_img">
+							<a href="images/usaIMG_1425.jpg"><img src="images/usaIMG_1425.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/usaIMG_1426.jpg"><img src="images/usaIMG_1426.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/usaIMG_1428.jpg"><img src="images/usaIMG_1428.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/usaIMG_1432.jpg"><img src="images/usaIMG_1432.jpg"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Case 2 -->
+			<div class="case_item">
+				<div class="case_info">
+					<div class="case_author">
+						<img src="images/avatar4.png" alt="">
+						<div class="case_name">
+							<span>Сергей Кокурин</span>
+							<p>Переезд: Москва - Ларнака</p>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="case_task">
+						<span></span>
+						
+					</div>
+					<div class="case_result">
+						<span></span>
+						
+					</div>
+				</div>
+
+				<div class="case_text">
+					<span>Отзыв клиента:</span>
+					Перевозили мебель и гидроцикл из нашего загородного дома в Щелковском районе Московской области на о. Кипр в г.Ларнака вместе в одном 20-футовом морском контейнере. Мы переживали за сохранность груза так как не были уверены, что можно было отправлять мототехнику и личные вещи вместе, но сотрудники из RRelocation Moscow специализируются на отправках авто и мототехники по всему миру и наглядно показали нам что в этом они лучшие. 
+
+					<div class="case_images">
+						<div class="case_img">
+							<a href="images/kiprIMG_1690.jpg"><img src="images/kiprIMG_1690.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/kiprIMG_1691.jpg"><img src="images/kiprIMG_1691.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/kiprIMG_1696.jpg"><img src="images/kiprIMG_1696.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/kiprIMG_1733.jpg"><img src="images/kiprIMG_1733.jpg"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Case 3 -->
+			<div class="case_item">
+				<div class="case_info">
+					<div class="case_author">
+						<img src="images/avatar1.png" alt="">
+						<div class="case_name">
+							<span>Алексей Кузин</span>
+							<p>Переезд: Москва - Израиль</p>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="case_task">
+						<span></span>
+					</div>
+					<div class="case_result">
+						<span></span>
+
+					</div>
+				</div>
+
+				<div class="case_text">
+					<span>Отзыв клиента:</span>
+					Отправляли с компанией RRelocation Moscow личные вещи и мебель после продажи квартиры в г. Москва в г. Хайфа (Израиль). Бригада из 6-ти человек справилась с упаковкой нашего имущества очень оперативно и за все время работ по упаковке и доставке своих вещей я ни разу не усомнилась в своем выборе мувинговой компании.
+
+					<div class="case_images">
+						<div class="case_img">
+							<a href="images/izrailIMG_0434.jpg"><img src="images/izrailIMG_0434.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/izrailIMG_0437.jpg"><img src="images/izrailIMG_0437.jpg"></a>
+						</div>
+
+						<div class="case_img">
+							<a href="images/izrailIMG_0438.jpg"><img src="images/izrailIMG_0438.jpg"></a>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+
+				
+</section>	
+<section class="screen6">
+				<div class="main">
+					<div class="title_block_return">Завершилась учеба или закончился трудовой контракт?</div>
+					<p>Помните, перевозка личных вещей в Россию также выполняется нашей компанией.</p>
+				</div>
+			</section>
+			<footer>
+	<div class="main" id="about">
+		<div class="main-footer">
+			<div class="logo_footer">
+		</div>
+		
+			<div class="payment-systems">
+				Принимаем к оплате 
+				<img src="images/pay_logo.png" alt="">
+			</div>
+
+		<div class="contact_footer">
+			<div class="phone_footer"><a href="tel:+7 (495) 088-12-75">+7 (495) 088-12-75</a></div>
+			<p>Россия, Москва, ул.Семеновский переулок 15</p>
+			<p><a href="mailto:info@rrelocation.ru">info@rrelocation.ru</a></p>
+			
+		</div>
+		</div>
+	</footer>
+
+
+	<!-- Модальные окна -->
+
+	<div id="modal">
+		<div class="form_popup">
+			<a href="https://rrelocation.ru/" class="close">×</a>
+			<form id="form2" name="form2" action="" method="post">
+				<div class="title_popup">Получите бесплатную консультацию<br>по тарифу «<span class="tarif_popup"></span>»</div>
+
+				<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="rrelocation">
+		<input type="hidden" name="admin_email" value="info@rrelocation.ru, info@rrelocation.ru, sr@rrelocation.ru, 5DB07A44-19BC-15DD-74FE-E7A4BE318ACF+79267770130@sms.ru">
+		<input type="hidden" name="form_subject" value="Получить тариф">
+		<!-- END Hidden Required Fields -->
+
+				
+
+				<label for="name2">Ваше имя:</label>
+				<input name="Имя" id="name2" placeholder="Иван Иванов" type="text"> 
+				<label for="phone2">Ваш телефон:</label>
+				<input name="Телефон" id="phone2" placeholder="+7 (999)999-99-99" type="text"> 
+				<!--<select id="select_tariff" name="тариф" size="1">
+					<option value="Экономный">Экономный</option>
+					<option value="Оптимальный">Оптимальный</option>
+					<option value="Под ключ">Под ключ</option>-->
+				<input type="submit" class="button" value="Получить консультацию">
+				<div class="privacy"><input type="checkbox" checked="" value="">Я согласен с условиями <a target="_blank" href="#">политики конфиденциальности</a></div>
+			</form>
+
+			
+		</div>
+	</div>
+
+</body></html>
